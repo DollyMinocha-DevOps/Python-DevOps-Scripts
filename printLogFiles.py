@@ -23,3 +23,7 @@ for file in glob.glob('/var/log/*.log'):
 # *.log matches all the files ending in .log
 # glob.glob('/var/log/*.log') returns a list of all files in /var/log whose names end with .log
 # No need for manual filtering like endswith('.log'). It directly matches patterns.
+
+# for file in glob.glob('/var/log/**/*.log', recursive=True):
+#    print(file)
+#Add recursion to search subfolders
